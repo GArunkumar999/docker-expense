@@ -5,3 +5,6 @@ COPY *.js .
 RUN npm install 
 ENV DB_HOST=mysql
 CMD ["node", "index.js"]
+
+
+# must give space for docker var
