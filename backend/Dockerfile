@@ -3,7 +3,7 @@ WORKDIR /opt/backend
 COPY package.json .
 COPY *.js . 
 RUN npm install 
-ENV DB_HOST=mysql
+ENV DB_HOST="mysql-dev.devopslearning.fun"
 EXPOSE 8080
 CMD ["node", "index.js"]
 
